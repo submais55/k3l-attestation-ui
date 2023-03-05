@@ -20,7 +20,7 @@ ReactDOM.render(
             <Route path={`/admin`} component={AdminLayout} />
             <Route path={`/attestation`} component={AttestationLayout} />
             <Route path={`/rtl`} component={RTLLayout} />
-            <Redirect from='/' to='/admin' />
+            <Redirect from='/' to='/attestation' />
           </Switch>
         </HashRouter>
       </ThemeEditorProvider>
