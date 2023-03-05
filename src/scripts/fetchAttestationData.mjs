@@ -119,6 +119,7 @@ export const fetchAttestationData = async (schemaIdList) => {
     const schemaId = schemaIdList[i]
     const attestationData = await contractInstance.getAttestationsBySchemaId(schemaId)
     const sortedAttestationData = sortAttestationData(attestationData)
+    console.log(sortedAttestationData)
     const attestationDataFormatted = {
       "top100Data": [],
       "bottom100Data": []
@@ -148,7 +149,6 @@ export const fetchAttestationData = async (schemaIdList) => {
       data: attestationDataFormatted
     })
   }
-  console.log(JSON.stringify(ret))
   return ret
 }
 

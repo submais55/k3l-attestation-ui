@@ -155,7 +155,7 @@ export default function Dashboard(props) {
               pt='50px'>
               <Switch>
                 {getRoutes(routes)}
-                <Redirect from='/' to='/attestation/default' />
+                <Redirect from='/' to='/attestation/ranking-tables' />
               </Switch>
             </Box>
           ) : null}

@@ -148,6 +148,5 @@ export const fetchAttestationData = async (schemaIdList) => {
       data: attestationDataFormatted
     })
   }
-
   return ret
 }
